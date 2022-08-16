@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/media/image/81-812594_looking-for-some-feedback-on-this-bookworm-logo.png" type="image/x-icon">
+    <title>Bookworm</title>
+    <link rel="stylesheet" href="static/css/main.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="page">
+        <aside class="bg-orage l"></aside>
+        <img src="static/media/image/1980Books1263x60.jpg" alt="" class="article">
+        <aside class="bg-orage r"></aside>
+    </div>
+    <header class="radius">
+        <div class="page">
+            <aside class="bg-white l"></aside>
+            <div class="article">
+                <nav class="toolbar">
+                    <a href="trangchu.html" class="logo">
+                        <img src="static/media/image/81-812594_looking-for-some-feedback-on-this-bookworm-logo.png" alt="">
+                    </a>
+                    <a href="trangchu.html" class="trangchu">
+                    Trang chủ
+                    </a>
+                    <a href="gioithieu.html" class="gioithieu">
+                    Giới thiệu
+                    </a>
+                    <a href="sanpham.html" class="sanpham">
+                    Sản Phẩm
+                    </a>
+
+                    <div class="timkiem">
+                        <input class="radius" type="text" name="" id="" placeholder="Nhập sản phẩm cần tìm . . . ">
+                        <button class="btn_timkiem"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
+                    <a href="donhang.html" class="donhang right-page">
+                        <i class="fa-solid fa-cart-shopping f-icon donhang"></i>
+                    </a>
+                    <a href="#" class="right-page taikhoan">
+                        <i class="fa-solid fa-user f-icon taikhoan" id="open-form-dangnhap1"></i>
+                    </a>
+                </nav>
+            </div>
+            <aside class="bg-white r"></aside>
+        </div>
+    </header>
+
+
+
+
+    <main class="page">
+
+        <aside class="l">
+
+        </aside>
+        <div class="article">
+
+            <div class="box bg-white radius cach">
+                <h2 class="bg-white">Danh mục sản phẩm</h2>
+                <div id="tab">
+                    <button class="button-tab" id="bkynang" onclick="openTab('kynang')">Kỹ Năng</button>
+                    <button class="button-tab" id="bgiaokhoa" onclick="openTab('giaokhoa')">Giáo Khoa</button>
+                    <button class="button-tab" id="btruyentranh" onclick="openTab('truyentranh')">Thiếu nhi</button>
+                    <button class="button-tab" id="bvanhoc" onclick="openTab('vanhoc')">Văn học</button>
+                    <button class="button-tab" id="bkinhte" onclick="openTab('kinhte')">Kinh Tế</button>
+                    <button class="button-tab" id="bforeign" onclick="openTab('foreign')">Foreign-books</button>
+                    <button class="button-tab" id="bkhac" onclick="openTab('khac')">Khác</button>
+                </div>
+            </div>
+
+            <div id="kynang" class="book-type">
+
+                <div id="cards">
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/kn1.jpg" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Kĩ năng đọc thông minh" id="card-title">
+                                    Kĩ năng đọc thông minh
+                                </span>
+                                <span id="card-subtitle">
+                                    Instant Research Institude
+                                </span>
+                                <span id="card-text">
+                                    Nhiều nhân viên trẻ khi mới bước vào môi trường công sở đã từng gặp rắc rối như
+                                    thế này: vì tốc độ đọc chậm mà tài liệu cứ chồng chất lên nhay; hiệu quả đọc không
+                                    cao,
+                                    thường xuyên
+                                    quên mất nội dung sau khi đọc; không thể phân loại thông tin và đưa ra tổng kết;
+                                    không
+                                    thể tìm thấy
+                                    nguồn thông tin mỗi khi cần đến... Từ tiếp nhận thông tin, xử lí thông tin đến trích
+                                    xuất thông tin
+                                    là một quá trình mà chúng ta dễ xảy ra nhiều thiếu sót, dẫn đến làm việc kém hiệu
+                                    quả.
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    21.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input  type="number" id="kn1" max="100" min="1" value="0" size="3">
+                                    <button class="radius" onclick="addCart('kn1')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/kn2.png" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Nhấc mông lên đừng ngồi đó mà mơ" id="card-title">
+                                    Nhấc mông lên đừng ngồi đó mà mơ
+                                </span>
+                                <span id="card-subtitle">
+                                    Nguyễn Đặng Quỳnh Anh
+                                </span>
+                                <span id="card-text">
+                                    “Nhấc Mông Lên Đừng Ngồi Đó Mà Mơ” nên được đọc vào mỗi đêm, trước giờ đi ngủ. Vì
+                                    đó là giờ đọc thú vị nhất. Hãy hình dung thế này, mỗi ngày bạn có cả trăm ngàn thứ
+                                    hầm
+                                    bà lằng đổ
+                                    dồn lên mình, và bạn sẽ trở về nhà với sự bực bội. Khi ấy, bạn cần lắm một chút giải
+                                    tỏa
+                                    nhưng lại
+                                    không phải từ những châm ngôn hay lời khuyên sáo rỗng.
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    22.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input type="number" id="kn2" max="100" min="1" value="0" size="3">
+                                    <button class="radius"  onclick="addCart('kn2')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/kn3.jpg" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Đừng để mâu thuẫn nhỏ gây hậu quả lớn" id="card-title">
+                                    Đừng để mâu thuẫn nhỏ gây hậu quả lớn
+                                </span>
+                                <span id="card-subtitle">
+                                    Mike Bechtle
+                                </span>
+                                <span id="card-text">
+                                    Trong các mối quan hệ, hầu hết mọi người đều muốn tránh khỏi những cãi vã không
+                                    thực sự cần thiết, dẫu là trong quan hệ vợ/ chồng, con cái, đồng nghiệp, cấp trên,
+                                    xã
+                                    giao, bạn bè…
+                                    Nhưng đồng thời, sự kìm nén cảm xúc, hay cố tình lờ đi, vờ như không biết, sở dĩ
+                                    “một
+                                    điều nhịn là
+                                    chín điều lành” tránh điều tiếng. Tuy nhiên những cuộc trò chuyện như vậy sẽ tạo cho
+                                    ta
+                                    cảm giác
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    23.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input type="number" id="kn3" max="100" min="1" value="0" size="3">
+                                    <button class="radius"  onclick="addCart('kn3')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/kn4.jpg" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Tư duy phi đối xứng" id="card-title">
+                                    Tư duy phi đối xứng
+                                </span>
+                                <span id="card-subtitle">
+                                    Tông Nghị, Trương Dược Văn
+                                </span>
+                                <span id="card-text">
+                                    Trong thời đại ngày nay, tư duy đối xứng đã không còn phù hợp nữa rồi. Nếu như
+                                    bạn nghĩ nỗ lực mình bỏ ra chắc chắn sẽ được hoàn trả 100% thì hãy suy nghĩ lại, mọi
+                                    thứ
+                                    không phải lúc
+                                    nào cũng bình đẳng và thứ ta bỏ ra chưa chắc đã tỉ lệ thuật với thứ ta thu về, bởi
+                                    ngoài
+                                    yếu tố chủ
+                                    quan là con người, chúng ta sẽ gặp những yếu tố khách quan khó đoán định. Bởi vậy,
+                                    thay
+                                    vì cứ mãi
+                                    nói kéo một tư duy đối xứng đã lỗi thời thì chúng ta cần phát triển cho mình một tư
+                                    duy
+                                    phi đối xứng.
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    24.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input type="number" id="kn4" max="100" min="1" value="0" size="3">
+                                    <button class="radius"  onclick="addCart('kn4')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/kn5.jpg" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Đừng để tiền ngủ yên trong túi" id="card-title">
+                                    Đừng để tiền ngủ yên trong túi
+                                </span>
+                                <span id="card-subtitle">
+                                    Tương Lâm
+                                </span>
+                                <span id="card-text">
+                                    Được sở hữu một khối tài sản lớn là ước mơ và mong muốn của mỗi chúng ta. Trong
+                                    thời đại ngày nay, khát hữu một khối tài sản lớn là ước mơ và mong vọng của con
+                                    người
+                                    đối với tài
+                                    sản vật chất lại càng lớn hơn nữa.
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    25.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input type="number" id="kn5" max="100" min="1" value="0" size="3">
+                                    <button class="radius"  onclick="addCart('kn5')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/kn6.jpg" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Hướng nghiệp trong thời đại 4.0" id="card-title">
+                                    Hướng nghiệp trong thời đại 4.0
+                                </span>
+                                <span id="card-subtitle">
+                                    Randall Stross
+                                </span>
+                                <span id="card-text">
+                                    “Hướng nghiệp trong thời đại 4.0” chứng minh rằng mọi sinh viên đều có thể phát
+                                    triển tối đa tiềm năng và phát triển mạnh mẽ nếu được trao cơ hội, bất kể họ có theo
+                                    đuổi một chuyên
+                                    ngành “cao cấp” hay không. Qua những trải nghiệm thực tế của các sinh viên ngành
+                                    nhân
+                                    văn, nhất là
+                                    công cuộc tìm kiếm việc làm và kinh nghiệm làm việc những ngày đầu của họ, cuốn sách
+                                    đem
+                                    tới những
+                                    minh chứng sống động về sự đa tài của sinh viên được đào tạo theo giáo dục khai
+                                    phóng.
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    26.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input type="number" id="kn6" max="100" min="1" value="0" size="3">
+                                    <button class="radius"  onclick="addCart('kn6')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="giaokhoa" class="book-type no-active">
+
+                <div id="cards">
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/gk1.png" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Luyện thi Olympic Toán - Maths Olympiad - Lớp 1" id="card-title">
+                                    Luyện thi Olympic Toán - Maths Olympiad - Lớp 1
+                                </span>
+                                <span id="card-subtitle">
+                                    Sheth Publishing House
+                                </span>
+                                <span id="card-text">
+                                    Ngày nay với sự phát triển của công nghệ thông tin, các cuộc thi toán quốc tế ngày
+                                    càng trở nên phổ biến nhất là các cuộc thi dành cho lứa tuổi tiểu học. Tuy nhiên tài
+                                    liệu ôn tập cho những cuộc thi này còn khan hiếm, do đó không ít học sinh sẽ cảm
+                                    thấy bỡ ngỡ và không đạt được kết quả mong muốn khi lần đầu tiếp xúc với đề thi.
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    21.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input type="number" id="gk1" max="100" min="1" value="0" size="3">
+                                    <button class="radius"  onclick="addCart('gk1')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/gk2.jpg" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Luyện thi Olympic Tiếng Anh lớp 2" id="card-title">
+                                    Luyện thi Olympic Tiếng Anh lớp 2
+                                </span>
+                                <span id="card-subtitle">
+                                    Sheth Publishing House
+                                </span>
+                                <span id="card-text">
+                                    Học ngữ pháp tiếng anh thế nào cho hiệu quả. Làm sao để ghi nhớ được các hiện tượng
+                                    ngữ pháp. Làm thế nào để đạt được điểm cao trong các kỳ thi Tiếng Anh . Bộ sách
+                                    “LUYỆN THI OLYMPIC TIẾNG ANH -EngLish Olympiad lớp 2 “chắc chắn sẽ là bộ tài liệu
+                                    hữu ích cho mỗi học sinh, giáo viên và phụ huynh cần để chuẩn bị kiến thức trước khi
+                                    bước vào các kỳ thi tiếng anh ở bậc tiểu học.
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    22.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input type="number" id="gk2" max="100" min="1" value="0" size="3">
+                                    <button class="radius"  onclick="addCart('gk2')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/gk3.png" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Luyện thi Olympic Toán - Maths Olympiad - Lớp 3" id="card-title">
+                                    Luyện thi Olympic Toán - Maths Olympiad - Lớp 3
+                                </span>
+                                <span id="card-subtitle">
+                                    Sheth Publishing House
+                                </span>
+                                <span id="card-text">
+                                    Bộ sách gồm 5 cuốn tương ứng với 5 lớp của bậc tiểu học. Nội dung của mỗi cuốn sách
+                                    được chia nhỏ theo từng chủ đề phù hợp với lượng kiến thức của các kì thi Olympic
+                                    toán theo từng độ tuổi. Trong mỗi chủ đều có phần tóm tắt lại các khái niệm cần nhớ
+                                    và một hệ thống bài tập đa dạng. Các bài tập này đều có hướng dẫn giải kèm theo cuối
+                                    sách để học sinh tiện tra cứu.
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    23.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input type="number" id="gk3" max="100" min="1" value="0" size="3">
+                                    <button class="radius"  onclick="addCart('gk3')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/gk4.png" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Tư duy phi đối xứng" id="card-title">
+                                    Luyện thi Olympic Toán - Maths Olympiad - Lớp 4
+                                </span>
+                                <span id="card-subtitle">
+                                    Sheth Publishing House
+                                </span>
+                                <span id="card-text">
+                                    Luyện thi Olympic Toán - Math Olympiad là bộ sách sẽ giúp các bạn nhỏ chinh phục các
+                                    cuộc thi toán tế và các cuộc thi toán học khác.
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    24.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input type="number" id="gk4" max="100" min="1" value="0" size="3">
+                                    <button class="radius"  onclick="addCart('gk4')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/gk5.jpg" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Luyện Thi Olympic Khoa Học Lớp 5" id="card-title">
+                                    Luyện Thi Olympic Khoa Học Lớp 5
+                                </span>
+                                <span id="card-subtitle">
+                                    Sheth Publishing House
+                                </span>
+                                <span id="card-text">
+                                    Bộ sách gồm 5 cuốn (từ lớp 1 đến lớp 5). Mỗi cuốn sách sẽ cung cấp cho trẻ hệ thống
+                                    bài tập cực kỳ phong phú được chia theo chủ đề. Các chủ đề đa dạng nhưng đều gần gũi
+                                    với thực tiễn cuộc sống. Hơn thế nữa, rất nhiều câu hỏi trong bộ sách này đòi hỏi
+                                    trẻ phải tư duy linh hoạt, khả năng phân tích đề bài và giải quyết vấn đề.
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    25.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input type="number" id="gk5" max="100" min="1" value="0" size="3">
+                                    <button class="radius"  onclick="addCart('gk5')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="truyentranh" class="book-type no-active">
+
+                <div id="cards">
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/tn1.png" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Giáo dục an toàn giao thông - Dành cho trẻ 4-5 tuổi - Đạp vịt thật là vui" id="card-title">
+                                    Giáo dục an toàn giao thông - Dành cho trẻ 4-5 tuổi - Đạp vịt thật là vui
+                                </span>
+                                <span id="card-subtitle">
+                                    Minh Ngọc
+                                </span>
+                                <span id="card-text">
+                                    Với thông điệp Giao thông an toàn - Học ngàn điều hay, bộ sách Giáo dục an toàn giao
+                                    thông (dành cho trẻ mẫu giáo) mang đến nhiều bài học thú vị, nhiều kĩ năng bổ ích,
+                                    sẽ giúp trẻ nhận biết các phương tiện và tín hiệu giao thông, cũng như làm quen và
+                                    thực hành một số kĩ năng cơ bản khi tham gia giao thông trong cuộc sống hàng ngày.
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    21.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input type="number" id="tn1" max="100" min="1" value="0" size="3">
+                                    <button class="radius"  onclick="addCart('tn1')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/tn2.jpg" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Cừu con nhanh trí - Ngụ ngôn song ngữ (Tái bản)" id="card-title">
+                                    Cừu con nhanh trí - Ngụ ngôn song ngữ (Tái bản)
+                                </span>
+                                <span id="card-subtitle">
+                                    Yên Bình, Điển Dũng
+                                </span>
+                                <span id="card-text">
+                                    Bộ sách “Ngụ ngôn song ngữ”, bao gồm 10 cuốn, là 10 câu chuyên ngụ ngôn kinh điển:
+                                    Con cáo và chùm nho, Đừng tin lời gã cáo, Đôi sừng hươu, Đàn kiến chăm chỉ, Cừu non
+                                    nhanh trí, Chỉ tại ham ăn, Con quạ thông minh, Kiến và chim bồ câu, Một cuộc thi
+                                    chạy, Hai chú dê qua cầu.
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    22.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input type="number" id="tn2" max="100" min="1" value="0" size="3">
+                                    <button class="radius"  onclick="addCart('tn2')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/tn3.jpg" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Đừng tin lời gã cáo - Ngụ ngôn song ngữ (Tái bản)" id="card-title">
+                                    Đừng tin lời gã cáo - Ngụ ngôn song ngữ (Tái bản)
+                                </span>
+                                <span id="card-subtitle">
+                                    Yên Bình, Điển Dũng
+                                </span>
+                                <span id="card-text">
+                                    Bộ sách “Ngụ ngôn song ngữ”, bao gồm 10 cuốn, là 10 câu chuyên ngụ ngôn kinh điển:
+                                    Con cáo và chùm nho, Đừng tin lời gã cáo, Đôi sừng hươu, Đàn kiến chăm chỉ, Cừu non
+                                    nhanh trí, Chỉ tại ham ăn, Con quạ thông minh, Kiến và chim bồ câu, Một cuộc thi
+                                    chạy, Hai chú dê qua cầu.
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    23.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input type="number" id="tn3" max="100" min="1" value="0" size="3">
+                                    <button class="radius"  onclick="addCart('tn3')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/tn4.jpg" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Một cuộc thi chạy - Ngụ ngôn song ngữ (Tái bản)" id="card-title">
+                                    Một cuộc thi chạy - Ngụ ngôn song ngữ (Tái bản)
+                                </span>
+                                <span id="card-subtitle">
+                                    Yên Bình, Điển Dũng
+                                </span>
+                                <span id="card-text">
+                                    Bộ sách “Ngụ ngôn song ngữ”, bao gồm 10 cuốn, là 10 câu chuyên ngụ ngôn kinh điển:
+                                    Con cáo và chùm nho, Đừng tin lời gã cáo, Đôi sừng hươu, Đàn kiến chăm chỉ, Cừu non
+                                    nhanh trí, Chỉ tại ham ăn, Con quạ thông minh, Kiến và chim bồ câu, Một cuộc thi
+                                    chạy, Hai chú dê qua cầu.
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    24.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input type="number" id="tn4" max="100" min="1" value="0" size="3">
+                                    <button class="radius"  onclick="addCart('tn4')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/tn5.jpg" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Hai chú dê qua cầu - Ngụ ngôn song ngữ (Tái bản)" id="card-title">
+                                    Hai chú dê qua cầu - Ngụ ngôn song ngữ (Tái bản)
+                                </span>
+                                <span id="card-subtitle">
+                                    Yên Bình, Điển Dũng
+                                </span>
+                                <span id="card-text">
+                                    Bằng hình minh họa màu sắc hài hòa, nội dung giản dị, giàu ý nghĩa, bố mẹ có thể dạy
+                                    cho em những đức tính tốt đẹp rút ra từ câu chuyện ngụ ngôn giàu ý nghĩa giáo dục
+                                    này.
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    25.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input type="number" id="tn5" max="100" min="1" value="0" size="3">
+                                    <button class="radius"  onclick="addCart('tn5')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card">
+                        <div id="card-left">
+                            <img src="static/media/image/sanpham/tn6.jpg" alt="">
+                        </div>
+                        <div id="card-right">
+                            <div id="card-content">
+                                <span title="Con quạ thông minh - Ngụ ngôn song ngữ (Tái bản)" id="card-title">
+                                    Con quạ thông minh - Ngụ ngôn song ngữ (Tái bản)
+                                </span>
+                                <span id="card-subtitle">
+                                    Yên Bình, Điển Dũng
+                                </span>
+                                <span id="card-text">
+                                    Bộ sách được thể hiện dưới hình thức SONG NGỮ Việt - Anh, không chỉ giúp các em nhỏ
+                                    tiếp thu những bài học đạo đức thú vị mà còn cùng lúc học song song cả Tiếng Việt và
+                                    Tiếng Anh.
+                                </span>
+                            </div>
+                            <div id="card-footer">
+                                <span id="card-price">
+                                    26.000 VND
+                                </span>
+
+                                <form action="" method="get">
+                                    <input type="number" id="tn6" max="100" min="1" value="0" size="3">
+                                    <button class="radius"  onclick="addCart('tn6')">Đặt</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="vanhoc" class="book-type no-active">
+                <div>Các sản phẩm tạm hết hàng.</div>
+            </div>
+
+            <div id="kinhte" class="book-type no-active">
+                <div>Đang trong giai đoạn thử nghiệm....</div>
+            </div>
+
+            <div id="foreign" class="book-type no-active">
+                <div>Đang trong giai đoạn thử nghiệm....</div>
+            </div>
+
+            <div id="khac" class="book-type no-active">
+                <div>Đang trong giai đoạn thử nghiệm....</div>
+            </div>
+
+        </div>
+        <aside class="r"></aside>
+    </main>
+
+
+    <footer class="page">
+        <aside class="l"></aside>
+        <div class="display-flex space-between">
+            <div class="footer-info">
+                <p class="can_deu">
+                    <h2>Công ty cổ phần sách Bookworm</h2>
+                </p>
+                <p class="can_deu">Địa chỉ: Khu 2 Đại học Cần Thơ, đường 3/2, Ninh Kiều, Cần Thơ</p>
+                <p class="can_deu">Bookworm.com nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống Bookworm trên toàn quốc.</p>
+                <div>
+                    <a href=""><img id="logo-bo-cong-thuong" src="static/media/image/footer/logo-bo-cong-thuong-da-thong-bao1.png" alt=""></a>
+                </div>
+                <div class="footer-info-social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+                <div class="footer-info-app">
+                    <a href="#"><img src="static/media/image/footer/android-app.png" alt=""></a>
+                    <a href="#"><img src="static/media/image/footer/appstore1-app.png" alt=""></a>
+                </div>
+            </div>
+            <div>
+                <div class="flex-grow-1 display-flex space-between footer-polocy">
+                    <div>
+                        <h2>DỊCH VỤ</h2>
+                        <p><a href="#">Điều khoản sử dụng</a></p>
+                        <p><a href="#">Chính sách bảo mật</a></p>
+                        <p><a href="#">Giới thiệu về chúng tôi</a></p>
+                        <p><a href="#">Hệ thống trung tâm - nhà sách</a></p>
+                    </div>
+                    <div>
+                        <h2>HỖ TRỢ</h2>
+                        <p><a href="#">Chính sách đổi - trả - hoàn tiền</a></p>
+                        <p><a href="#">Chính sách khách sỉ</a></p>
+                        <p><a href="#">Phương thức vận chuyển</a></p>
+                        <p><a href="#">Phương thức thanh toán và xuất HĐ</a></p>
+                    </div>
+                    <div>
+                        <h2>TÀI KHOẢN CỦA TÔI</h2>
+                        <p><a href="#">Đăng nhập/Tạo mới tài khoản</a></p>
+                        <p><a href="#">Thay đổi địa chỉ khách hàng</a></p>
+                        <p><a href="#">Chi tiết tài khoản</a></p>
+                        <p><a href="#">Lịch sử mua hàng</a></p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>LIÊN HỆ</h2>
+                    <div class="display-flex footer-contact space-between">
+                        <div><i class="fa-solid fa-location-dot"></i><span> Khu 2 DHCT 3/2 Ninh Kieu Can Tho</span></div>
+                        <div><i class="fa-solid fa-envelope"></i><span> cskh@gmail.com</span></div>
+                        <div><i class="fa-solid fa-phone"></i><span> 1900 0000</span></div>
+                        <p> &copy; Được thiết kế bởi nhóm 03 CT188-11 2022</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <aside class="r"></aside>
+    </footer>
+
+    <div>
+        <div class="chat" id="chat">
+            <div class="chat-header">
+                <p>Xin chào! Bạn cần trợ giúp?</p>
+                <div id="chat-close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <form class="bg-white" action="" method="post" enctype="application/x-www-form-urlencoded" onsubmit="return checkform(this);">
+                <div class="chat-form-content">
+                    <p>Quý khách vui lòng để lại lời nhắn. Chúng tôi sẽ phản hồi ngay khi có thể. Xin cảm ơn.</p>
+                    <div class="display-flex chat-name ">
+                        <input type="text" placeholder="Tên của bạn" id="chat-name" name="name">
+                    </div>
+                    <div class="display-flex ">
+                        <input type="text" placeholder="Địa chỉ Email" id="email1" name="email">
+                    </div>
+                    <div class="display-flex">
+                        <input type="number" placeholder="Số điện thoại" id="chat-phone-number" name="sdt" minlength="10" maxlength="10">
+                    </div>
+                    <div class="display-flex">
+                        <textarea name="" id="" cols="27" rows="5" placeholder="Hãy nhập tin nhắn của bạn" id="chat-content" name="noidungchat"></textarea>
+                    </div class="display-flex">
+                    <div id="chat-submit" class="custom-btn">
+                        <button type="submit">Gửi tin nhắn</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <a href="#" id="chat-open" onclick="show_hide_chat();">
+            <p><i class="fa-brands fa-facebook-messenger"></i>Chat với chúng tôi</p>
+        </a>
+    </div>
+
+    <div id="Modaldangnhap" class="modal">
+        <div class="my-modal-content">
+            <div class="modal-header">
+                <h3 class="auth-form-heading">Đăng nhập</h3>
+                <span class="close" id="closemodaldangnhap"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <div class="auth-form cach bg-white">
+                <form method="post" action="" onsubmit="return checkform(this);">
+                    <div class="auth-form-form bg-white bg-white">
+                        <div class="auth-form-group display-flex cach">
+                            <input type="text" class="auth-form-input bg-white" placeholder="Email:*" name="email">
+                        </div>
+                        <div class="auth-form-group display-flex bg-white">
+                            <input type="password" class="auth-form-input bg-white" placeholder="Mật khẩu:*" name="matkhau">
+                        </div>
+                    </div>
+                    <div class="auth-form-aside cach bg-white">
+                        <p class="auth-form-polocy-text bg-white">
+                            Bằng việc đăng ký bạn đã đồng ý với chúng tôi về
+                            <a href="" class="auth-form-polocy-link bg-white">Điều khoản dịch vụ</a> và
+                            <a href="" class="auth-form-polocy-link bg-white">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="auth-form-submit bg-white">
+                        <button type="submit" class="auth-form-btn-submit cach">Đăng nhập</button>
+                    </div>
+                </form>
+                <div class="auth-form-social display-flex bg-white">
+                    <a href="" id="auth-form-social-fb " class="bg-white">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span class="bg-white"> Kết nối vớiFacebook</span>
+                    </a>
+                    <a href="" id="auth-form-social-gg " class="bg-white">
+                        <i class="fa-brands fa-google bg-white"></i>
+                        <span class="bg-white"> Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span><a href="#">Quên mật khẩu</a></span>
+                <button id="open-form-dangky2" class="auth-form-btn-submit">Đăng ký</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- <button id="open-form-dangky1">Đăng ký</button> -->
+    <div id="Modaldangky" class="modal">
+        <div class="my-modal-content">
+            <div class="modal-header">
+                <h3 class="auth-form-heading">Đăng ký thông tin tài khoản</h3>
+                <span class="close" id="closemodaldangky"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <div class="auth-form cach">
+                <form method="post" action="" onsubmit="return checkform(this);">
+                    <div class="auth-form-form bg-white">
+                        <div class="auth-form-group display-flex bg-white">
+                            <input type="text" class="auth-form-input bg-white" placeholder="Nhập tên:*" name="name">
+                        </div>
+                        <div class="auth-form-group display-flex bg-white">
+                            <input type="text" class="auth-form-input bg-white cach" placeholder="Email:*" name="email">
+                        </div>
+                        <div class="auth-form-group display-flex bg-white bg-white">
+                            <input type="password" class="auth-form-input bg-white" placeholder="Mật khẩu:*" name="matkhau">
+                        </div>
+                        <div class="auth-form-group display-flex bg-white">
+                            <input type="password" class="auth-form-input bg-white cach" placeholder="Xác nhận lại mật khẩu:*" name="xacnhanmatkhau">
+                        </div>
+                    </div>
+                    <div class="auth-form-asid cach bg-white">
+                        <p class="auth-form-polocy-text bg-white">
+                            Bằng việc đăng ký bạn đã đồng ý với chúng tôi về
+                            <a href="" class="auth-form-polocy-link bg-white">Điều khoản dịch vụ</a> và
+                            <a href="" class="auth-form-polocy-link bg-white">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="auth-form-submit bg-white">
+                        <button type="submit" class="auth-form-btn-submit cach">ĐĂNG KÝ</button>
+                    </div>
+                </form>
+
+                <div class="auth-form-social display-flex bg-white">
+                    <a href="" id="auth-form-social-fb" class="bg-white">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span class="bg-white">Kết nối vớiFacebook</span>
+                    </a>
+                    <a href="" id="auth-form-social-gg" class="bg-white">
+                        <i class="fa-brands fa-google"></i>
+                        <span class="bg-white">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span>Đã có tài khoản</span>
+                <button id="open-form-dangnhap2" class="auth-form-btn-submit">Đăng nhập</button>
+            </div>
+        </div>
+    </div>
+    <div id="getnotify" class="no-notify"></div>
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>

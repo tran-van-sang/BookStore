@@ -1,0 +1,933 @@
+* {
+    background-color: rgb(231, 232, 233);
+    color: black;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-orage {
+    background-color: rgb(246, 220, 174);
+}
+
+.radius {
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.can_deu {
+    text-align: justify;
+    padding-right: 12px;
+}
+
+.page {
+    width: 100%;
+    display: grid;
+    grid-template: "l article r" auto / 10% 80% 10%;
+}
+
+.article {
+    width: 100%;
+    grid-area: article;
+}
+
+.cach {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-justify {
+    text-align: justify;
+    font-size: 20px;
+}
+
+aside.l {
+    grid-area: l;
+}
+
+aside.r {
+    grid-area: r;
+}
+
+
+/* header */
+
+header {
+    background-color: #ebe5b3;
+}
+
+header>img {
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+header .toolbar {
+    left: 0px;
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: 100px;
+}
+
+header .article {
+    height: 100px;
+}
+
+.toolbar a {
+    position: relative;
+    vertical-align: middle;
+    background-color: white;
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.logo img {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+.trangchu:hover,
+.gioithieu:hover,
+.sanpham:hover,
+.taikhoan:hover,
+.donhang:hover,
+.taikhoan:hover {
+    color: rgb(236, 189, 103);
+}
+
+.f-icon {
+    font-size: 24px;
+    background-color: white;
+}
+
+.right-page {
+    float: right;
+}
+
+.timkiem {
+    position: relative;
+    left: 478px;
+    bottom: 40px;
+    display: block;
+    background-color: white;
+    width: 342px;
+}
+
+.timkiem>input {
+    background-color: white;
+    width: 300px;
+    height: 30px;
+    border-color: rgb(148, 147, 147);
+}
+
+.timkiem>button {
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: 300px;
+    height: 36px;
+    background-color: white;
+    border: none;
+    width: 10px;
+}
+
+.timkiem>button>i {
+    font-size: 24px;
+    background-color: white;
+}
+
+.timkiem>button>i:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.donhang,
+.taikhoan {
+    position: relative;
+    top: -40px;
+    right: 15px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+
+
+/* main */
+
+
+/* quảng cáo */
+
+.qc {
+    display: grid;
+    grid-template: "slide h1" auto "slide h2" auto / 67% 32%;
+}
+
+.slide {
+    grid-area: slide;
+}
+
+.h1 {
+    margin-left: 14px;
+    grid-area: h1;
+}
+
+.h2 {
+    margin-left: 14px;
+    grid-area: h2;
+}
+
+.giaokhoa a:hover,
+.kynang a:hover,
+.thieunhi a:hover,
+.vanhoc a:hover,
+.nuocngoai a:hover,
+.vpp a:hover,
+.kinhte a:hover {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* giảm giá */
+
+.gia_giam {
+    color: red;
+    font-weight: bolder;
+    display: block;
+    font-size: 16px;
+}
+
+.gia_goc {
+    text-decoration: line-through;
+}
+
+
+/* vì sao đọc sách */
+
+#vi_sao_doc_sach {
+    width: 100%;
+}
+
+
+/* danh mục sách */
+
+.box {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.box h2 {
+    margin-bottom: 30px;
+}
+
+.box div {
+    width: calc(80%/7);
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-items: center;
+}
+
+.box div img {
+    display: block;
+    width: 100px;
+    margin: auto;
+}
+
+.box div a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.box p {
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+#vi_sao_doc_sach {
+    width: 95%;
+}
+
+container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+i {
+    width: 14px;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-3 {
+    flex-grow: 3;
+}
+
+.footer-info {
+    max-width: 400px;
+}
+
+.footer-info div {
+    text-align: left;
+    margin-bottom: 3px;
+}
+
+.footer-info-social {
+    justify-content: space-between;
+}
+
+#logo-bo-cong-thuong {
+    width: 150px;
+}
+
+.footer-info-social>a {
+    margin: 0px 2px;
+}
+
+.footer-info-social i {
+    display: inline-block;
+    font-size: 30px;
+    color: black;
+    width: calc(60%/5);
+}
+
+.footer-info-app img {
+    width: 100px;
+    margin: 10px;
+}
+
+.footer-polocy {
+    width: 900px;
+    padding: 16px;
+}
+
+.footer-polocy>p {
+    font-size: 15px;
+}
+
+.footer-polocy a:hover {
+    color: rgb(236, 189, 103);
+    margin-left: 5px;
+    text-decoration: dashed;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.footer-contact>div {
+    width: calc(100%/3);
+}
+
+
+/* Chat form */
+
+#chat-open {
+    display: flex;
+    position: fixed;
+    bottom: 0%;
+    right: 2%;
+    background-color: rgb(112, 112, 255);
+    border-radius: 7px 7px 0px 0px;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 10px;
+    padding-top: 10px;
+}
+
+#chat-open p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 15px;
+    color: aliceblue;
+    background-color: rgb(112, 112, 255);
+    ;
+}
+
+#chat-open p>i {
+    margin: 0px 3px;
+    color: aliceblue;
+    background-color: rgb(112, 112, 255);
+    ;
+}
+
+#chat-open:hover {
+    height: 45px;
+    animation: height 1s ease-in-out;
+    padding: 15px;
+}
+
+#chat-open p:hover {
+    font-size: 18px;
+}
+
+.chat {
+    position: fixed;
+    right: 2%;
+    bottom: 9%;
+    display: none;
+    box-sizing: border-box;
+    max-width: 250px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    font-size: 11.5px;
+    background-color: rgb(145 209 234);
+    animation: opacity 1s ease-in-out;
+    overflow: hidden;
+}
+
+.chat input:focus {
+    border: 1px solid rgb(145 209 234);
+}
+
+::-ms-value,
+::placeholder {
+    font-size: 11.5px;
+}
+
+.chat-header {
+    padding-top: 3px;
+    position: relative;
+    display: flex;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgb(145 209 234);
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    justify-content: center;
+}
+
+.chat-header p {
+    background-color: rgb(145 209 234);
+}
+
+.chat-header #chat-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: fit-content;
+    background-color: transparent;
+    color: rgb(145 209 234);
+    border-radius: 50%;
+}
+
+#chat-close i {
+    display: block;
+    width: 15px;
+    height: 15px;
+    color: white;
+    background-color: rgb(145 209 234);
+}
+
+#chat-close:hover {
+    width: 15px;
+    background-color: aliceblue;
+    font-weight: bold;
+}
+
+#chat-close i:hover {
+    color: rgb(209, 146, 9);
+    cursor: pointer;
+}
+
+.chat-name input {
+    width: 25px;
+    flex: none;
+    margin: 0px 1px;
+}
+
+.chat-name input:last-child {
+    flex: 1;
+}
+
+.chat-form-content>* {
+    margin: 3px 2px;
+}
+
+.chat-form-content>p {
+    margin: 7px 2px;
+    border-radius: 3px;
+}
+
+.chat-form-content input {
+    margin-right: 2px;
+    border: 0.5px solid #000;
+}
+
+#chat-submit {
+    /* background-color: rgb(209, 146, 9); */
+    color: antiquewhite;
+    display: block;
+    text-align: center;
+}
+
+#chat-submit button {
+    background-color: rgb(112, 112, 255);
+    padding: 3px;
+    border: transparent;
+    font-weight: bolder;
+    font-size: 14px;
+    color: aliceblue;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#chat-submit button:hover {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+
+/* giới thiệu */
+
+.dong_sang_lap {
+    width: 40% !important;
+    margin-left: 40px !important;
+    margin-bottom: 40px;
+    background-color: white;
+}
+
+.dong_sang_lap img {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.dong_sang_lap h3 {
+    text-align: center;
+    background-color: white;
+}
+
+
+/* Đăng nhập */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal form {
+    background-color: white;
+}
+
+
+/* Modal Content */
+
+.my-modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    width: fit-content;
+}
+
+.close i {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    width: 28px;
+    height: 28px;
+    background-color: rgb(145 209 234);
+}
+
+.close i:hover,
+.close i:focus {
+    text-align: center;
+    background-color: rgb(145 209 234);
+    color: rgb(214, 140, 71);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: rgb(145 209 234);
+    color: black;
+}
+
+.auth-form-heading {
+    background-color: rgb(145 209 234);
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.auth-form-input {
+    border: 1px solid rgb(175, 174, 174);
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: white !important;
+}
+
+.modal-footer span,
+.modal-footer span a {
+    color: black;
+    font-weight: 400;
+    background-color: white !important;
+}
+
+#open-form-dangnhap {
+    background-color: aliceblue;
+    color: rgb(228, 124, 54);
+}
+
+.auth-form-btn-submit {
+    background-color: rgb(145 209 234);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+/* San Pham */
+#tab {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* background-color: white; */
+    margin-bottom: 5px;
+}
+
+.no-active {
+    display: none;
+}
+
+#bkynang {
+    background-color: #0d6efd;
+}
+
+#vanhoc div,
+#kinhte div,
+#foreign div,
+#khac div {
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.button-tab {
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+    padding: 8px;
+    /* background-color: white; */
+    width: calc(100%/8);
+}
+
+.button-tab:hover {
+    color: orange;
+    box-shadow: 0 0 5px 0 lightseagreen;
+}
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#card {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: calc(50% - 22px);
+    border: 1px lightslategray solid;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#card:hover {
+    box-shadow: 0 0 10px 0 #00000066;
+    cursor: pointer;
+}
+
+#card-left {
+    flex-basis: 280px;
+}
+
+#card-left img {
+    max-height: 250px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: .5px solid black;
+}
+
+#card-title,
+#card-subtitle,
+#card-text {
+    padding-left: 8px;
+    padding-right: 5px;
+}
+
+#card-right *, #tab, .button-tab, #card-footer * {
+    background-color: white;
+}
+
+#card-title {
+    display: block;
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+#card-subtitle {
+    display: block;
+    font-size: 19px;
+    margin-top: auto;
+    color: gray;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+#card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+#card-footer {
+    display: flex;
+    justify-content: space-around;
+    border-bottom-right-radius: 5px;
+    align-items: center;
+    background-color: rgb(231, 232, 233);
+}
+
+#card-footer * {
+    background-color: rgb(231, 232, 233);
+}
+
+#card-price {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    color: red;
+    font-weight: 600;
+}
+
+#card-footer button {
+    font-size: 20px;
+    margin: 5px;
+    background-color: #0d6efd;
+    border: none;
+    padding: 5px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#card-footer button:hover {
+    box-shadow: 0 0 10px 0 #0d6efd, 0 0 10px 0 #0000004d;
+    /* background-color: yellow; */
+}
+
+#card-footer form {
+    display: flex;
+    flex-direction: row;
+}
+
+#card-footer form input {
+    width: 45px;
+    border: none;
+    line-height: 1.7;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.no-notify{
+    display: none;
+}
+
+.notify {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    width: 282px;
+    height: 90px;
+    transform: scale(0.75);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.35);
+    margin: 20px 15px;
+    background-image: url('../media/image/sanpham/notify-succeess.png');
+    bottom: 0;
+    left: 0;
+    animation: fade-in 3s ease-in-out, fade-in 3s reverse forwards;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to {  opacity: 1; }
+}
+
+/* Don Hang */
+#details-order {
+    text-align: center;
+}
+
+#details-order td,
+#details-order tr {
+    border-bottom: 1px solid rgb(231, 232, 233);
+    font-size: 18px;
+    width: fit-content;
+}
+
+#totalprice,
+#discount,
+#tax,
+#totalcost {
+    text-align: right;
+}
+
+#flex-donhang {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#chitiet {
+    width: 62%;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+#chitiet, #chitiet *, #hoadon, #hoadon *, #details-order, #details-order *{
+    background-color: white;
+}
+
+#chitiet table {
+    width: 100%;
+    border: 0.5px solid rgb(231, 232, 233);
+}
+
+#details-order, #chitiet h1, #hoadon h1, #sm-donhang input{
+    text-align: center;
+    border-radius: 10px;
+}
+
+.round-figure{
+    max-width: 130px;
+}
+
+#hoadon {
+    width: 35%;
+    padding: 20px 0;
+}
+
+#hoadon table {
+    margin: auto;
+    width: 85%;
+}
+
+#hoadon table tr,
+#hoadon table td {
+    text-align: left;
+    line-height: 2.5;
+    border-bottom: 1px solid rgb(231, 232, 233);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#sm-donhang input {
+    font-weight: bold;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(231, 232, 233);
+    font-size: 18px;
+    background-color: #0d6efd;
+}
